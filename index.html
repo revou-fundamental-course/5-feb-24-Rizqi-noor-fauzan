@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konveri Suhu | RevoU</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <h2 class="logo">Fzx</h2>
+    <nav>
+      <a href="#celcius-box">Celcius &#8451</a>
+      <a href="#farenheit-box">Farenheit &#8457</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Temperature Conversion from Celcius to Fahrenheit</h2>
+    <main>
+      <div class="box-suhu" id="celcius-box">
+        <label for="celcius">Celcius</label>
+        <div class="box-input">
+          <input type="text" id="celcius" placeholder="Input Celcius" onkeypress="return onlyNum(event)" maxlength="9">
+        </div>
+        <div class="button">
+          <button onclick="convertFahren()" id="konversi">Konversi</button>
+          <button onclick="reset()" id="reset">Reset</button>
+          <button onclick="convertCelc()">Reverse</button>
+        </div>
+      </div>
+      <div class="box-suhu" id="farenheit-box">
+        <label for="fahrenheit">Fahrenheit</label>
+        <div class="box-input">
+          <input type="text" id="fahrenheit" placeholder="Input Fahrenheit" onkeypress="return hanyaAngka(event)"
+            maxlength="9">
+        </div>
+      </div>
+      <div class="box-suhu">
+        <label for="kalkulasi">Cara Kalkulasi</label>
+        <div class="box-input">
+          <textarea name="" id="kalkulasi" cols="35" rows="5"></textarea>
+        </div>
+        <!-- <a href="#">Farenheit ke Celsius</a> -->
+      </div>
+      </div>
+    </main>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
