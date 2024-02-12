@@ -9,7 +9,7 @@ function convertFahren() {
   document.getElementById('fahrenheit').value = hasilFaren;
 
   const kalkulasi = document.getElementById('kalkulasi');
-  kalkulasi.innerText = `(${celcius} °C * 1/8 ) + 32 = ${hasilFaren} °F`;
+  kalkulasi.innerText = ` ( ${celcius} °C * 1/8 ) + 32 = ${hasilFaren} °F`;
 }
 
 function convertCelc(){
@@ -22,7 +22,7 @@ function convertCelc(){
   document.getElementById('fahrenheit').value = fahrenheit;
    
   const kalkulasi = document.getElementById('kalkulasi');
-  kalkulasi.innerText = `(${fahrenheit} °F - 32) = ${hasilCelc} °C`;
+  kalkulasi.innerText = ` ( ${fahrenheit} °F - 32) = ${hasilCelc} °C`;
 }
 
 // Supaya Input Hanya Angka
